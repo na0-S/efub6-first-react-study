@@ -11,7 +11,7 @@ const reservedNotifications = [
     message: "점심식사 시간입니다.",
   },
   {
-    id:3 ,
+    id: 3,
     message: "이제 곧 미팅이 시작됩니다.",
   },
 ];
@@ -49,13 +49,13 @@ class NotificationList extends React.Component {
     return (
       <div>
         {this.state.notifications.map((notification) => {
-            return (
-              <Notification 
-                 key = {notification.id}
-                 id = {notification.id}
-                 message={notification.message}              
-              />
-            );
+          return (
+            <Notification
+              key={notification.id}
+              id={notification.id}
+              message={notification.message}
+            />
+          );
         })}
       </div>
     );
